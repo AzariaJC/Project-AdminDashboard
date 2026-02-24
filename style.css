@@ -1,0 +1,91 @@
+.content {
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main-content";
+}
+
+.header {
+    background-color: aquamarine;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "form top-right"
+    "header-row-2 header-row-2";
+}
+form {
+    grid-area: form;
+}
+.user-icon {
+    grid-area: user-icon;
+}
+.left-side {
+    grid-area: left-side;
+}
+.right-side {
+    grid-area: right-side;
+}
+.top-right {
+    grid-area: top-right;
+}
+.header-row-2 {
+    grid-area: header-row-2;
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    grid-template-areas: 
+    "left-side right-side";
+}
+.right-side {
+    display: flex;
+    padding-right: 20px;
+    justify-content: space-around;
+}
+button {
+    background-color: #00F3FF;
+    height: fit-content;
+}
+
+.sidebar {
+    background: rgba(13, 17, 23, 0.8);
+    backdrop-filter: blur(12px);
+    grid-area: sidebar;
+    color: whitesmoke;
+}
+
+.sidebar .top {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    list-style-type: none;
+}
+.sidebar .top li {
+    size: 1em;
+    display: flex;
+    padding-bottom: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.sidebar .bottom {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    list-style-type: none;
+}
+.sidebar .bottom li {
+    size: 1em;
+    display: flex;
+    padding-bottom: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.main-content {
+    background-color: blueviolet;
+    grid-area: main-content;
+}

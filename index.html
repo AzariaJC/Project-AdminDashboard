@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="content">
         <div class="header">
             <form action="/search_results.html" method="get" role="search">
                 <button type="submit">Search</button>
@@ -22,31 +22,37 @@
                 <img class="user-icon" src="user-icon.svg" alt="small user avatar">
                 <span class="user-name">User Name</span>
             </div>
-            <div class="headerRow2">
-                <img class="user-icon" src="user-icon.svg" alt="user avatar">
-                <ul class="button-list">
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Upload</a></li>
-                    <li><a href="#">Share</a></li>
-                </ul>
-            </div>
-            <div class="sidebar">
-                <h1>Dashboard</h1>
-                <ul class="top">
-                    <li><i class="material-symbols-outlined">home</i>Home</li>
-                    <li><i class="material-symbols-outlined">account_circle</i>Account</li>
-                    <li><i class="material-symbols-outlined">inbox_text</i>Messages</li>
-                    <li><i class="material-symbols-outlined">history</i>History</li>
-                    <li><i class="material-symbols-outlined">checklist_rtl</i>Tasks</li>
-                    <li><i class="material-symbols-outlined">communities</i>Communities</li>
-                </ul>
-                <ul class="bottom">
-                    <li><i class="material-symbols-outlined">settings</i>Settings</li>
-                    <li><i class="material-symbols-outlined">contact_support</i>Support</li>
-                    <li><i class="material-symbols-outlined">shield_with_heart</i>Privacy</li>
-                </ul>
+            <div class="header-row-2">
+                <div class="left-side">
+                    <img class="user-icon" src="user-icon.svg" alt="user avatar">
+                    <p>Hi there,</p>
+                </div>
+                <div class="right-side">
+
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+
+                </div>
             </div>
         </div>
+        <div class="sidebar">
+            <h1>Dashboard</h1>
+            <ul class="top">
+                <li><i class="material-symbols-outlined">home</i>Home</li>
+                <li><i class="material-symbols-outlined">account_circle</i>Account</li>
+                <li><i class="material-symbols-outlined">inbox_text</i>Messages</li>
+                <li><i class="material-symbols-outlined">history</i>History</li>
+                <li><i class="material-symbols-outlined">checklist_rtl</i>Tasks</li>
+                <li><i class="material-symbols-outlined">communities</i>Communities</li>
+            </ul>
+            <ul class="bottom">
+                <li><i class="material-symbols-outlined">settings</i>Settings</li>
+                <li><i class="material-symbols-outlined">contact_support</i>Support</li>
+                <li><i class="material-symbols-outlined">shield_with_heart</i>Privacy</li>
+            </ul>
+        </div>
+
         <div class="main-content">
             <h2 class="main-content-header">Your Projects</h2>
             <div class="card">
